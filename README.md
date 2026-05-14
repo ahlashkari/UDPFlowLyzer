@@ -1,3 +1,5 @@
+![](https://github.com/ahlashkari/UDPFlowLyzer/blob/master/bccc.jpg)
+
 # UDPFlowLyzer
 
 UDPFlowLyzer is a UDP network traffic flow analyzer for extracting UDP flow-level features from PCAP/PCAPNG traffic.
@@ -41,3 +43,25 @@ python3 -m NTLFlowLyzer --config NTLFlowLyzer/config.json
 ## Notes
 
 Large PCAP files, generated CSV outputs, virtual environments, and private datasets are intentionally excluded from this repository.
+
+# Citation & Copyright (c) 2023
+
+For citation in your works and also understanding NTLFlowLyzer completely, you can find below published papers:
+
+- 
+
+# Contributing
+
+Any contribution is welcome in form of pull requests.
+
+
+# Project Team members 
+
+* [**Arash Habibi Lashkari:**](http://ahlashkari.com/index.asp) Founder and supervisor
+
+* [**Sepehr Jafari:**](https://github.com/Aeripsen) Research Assistant - York University ( 2025 - 2026)
+
+
+# Acknowledgment
+
+This project has been made possible through funding from the Natural Sciences and Engineering Research Council of Canada — NSERC (#RGPIN-2020-04701) and Canada Research Chair (Tier II) - (#CRC-2021-00340) to Arash Habibi Lashkari.
