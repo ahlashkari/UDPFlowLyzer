@@ -48,7 +48,7 @@ Large PCAP files, generated CSV outputs, virtual environments, and private datas
 
 For citation in your works and also understanding NTLFlowLyzer completely, you can find below published papers:
 
-- 
+- Jafari, S.; Shafi, M. and Lashkari, A. H., Unveiling Hierarchical Machine Learning UDP–QUIC Intrusion Detection: Protocol-Aware Flow Analysis and a New Generated DDoS Dataset, International Conference on Security and Cryptography (SECRYPT) 2026, Portugal
 
 # Contributing
 
