@@ -24,3 +24,15 @@ outputs/
 reports/
 mar06_enriched/
 quic_report/
+
+# Local UDP feature taxonomy generation artifacts
+docs/feature_taxonomy.md
+docs/feature_taxonomy.png
+docs/feature_taxonomy.svg
+docs/feature_taxonomy_d3.json
+docs/observable_chart_code.js
+docs/observable_radial_tree_data.js
+
+# Local taxonomy rendering tools
+tools/generate_udp_taxonomy.py
+tools/render/

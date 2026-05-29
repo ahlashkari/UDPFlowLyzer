@@ -11,6 +11,12 @@ UDPFlowLyzer is a UDP network traffic flow analyzer for extracting UDP flow-leve
 - Includes UDP header, timing, volume, burst, entropy, percentile, and statistical feature modules
 - Exports extracted flow features for downstream intrusion detection and traffic analysis
 
+## Feature Visualization
+
+The figure below shows the UDPFlowLyzer feature taxonomy, organized by feature category and subgroup.
+
+![UDPFlowLyzer Feature Taxonomy](feature_taxonomy.svg)
+
 ## Installation
 
 Create a virtual environment and install the package:
