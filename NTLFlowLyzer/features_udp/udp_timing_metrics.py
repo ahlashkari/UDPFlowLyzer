@@ -2,30 +2,6 @@
 from .base import Feature
 import numpy as np
 
-class IATCoefficientOfVariationFeature(Feature):
-    """Inter-arrival time coefficient of variation - std(IAT)/mean(IAT)."""
-    name = "iat_cov"
-    category = "timing"
-    min_samples = 3
-    requires_timestamps = True
-    
-    def extract(self, flow) -> float:
-        packets = flow.get_packets()
-        if len(packets) < self.min_samples:
-            return 0.0
-        
-        timestamps = np.array([pkt.get_timestamp() for pkt in packets])
-        iats = np.diff(timestamps)
-        
-        if len(iats) == 0:
-            return 0.0
-        
-        mean_iat = np.mean(iats)
-        if mean_iat == 0:
-            return 0.0
-        
-        return float(np.std(iats) / mean_iat)
-
 class JitterFirstOrderFeature(Feature):
     """First-order jitter - standard deviation of inter-arrival times."""
     name = "jitter_first_order"
@@ -241,52 +217,6 @@ class PeakPktRate1sFeature(Feature):
             max_rate = max(max_rate, rate)
         
         return float(max_rate) 
-
-class MeanIATFeature(Feature):
-    """Mean inter-arrival time."""
-    name = "mean_iat"
-    category = "timing"
-    min_samples = 2
-    requires_timestamps = True
-
-    def extract(self, flow) -> float:
-        times = [pkt.get_timestamp() for pkt in flow.get_packets()]
-        if len(times) < 2:
-            return 0.0
-        iats = np.diff(times)
-        return float(np.mean(iats))
-
-
-class StdIATFeature(Feature):
-    """Standard deviation of inter-arrival times."""
-    name = "std_iat"
-    category = "timing"
-    min_samples = 2
-    requires_timestamps = True
-
-    def extract(self, flow) -> float:
-        times = [pkt.get_timestamp() for pkt in flow.get_packets()]
-        if len(times) < 2:
-            return 0.0
-        iats = np.diff(times)
-        return float(np.std(iats))
-
-class MedianIATFeature(Feature):
-    """Median inter-arrival time - robust alternative to mean IAT."""
-    name = "median_iat"
-    category = "timing"
-    min_samples = 2
-    requires_timestamps = True
-    
-    def extract(self, flow) -> float:
-        packets = flow.get_packets()
-        if len(packets) < self.min_samples:
-            return 0.0
-        
-        timestamps = np.array([pkt.get_timestamp() for pkt in packets])
-        iats = np.diff(timestamps)
-        
-        return float(np.median(iats)) if len(iats) > 0 else 0.0
 
 class IATBurstRatioFeature(Feature):
     """Fraction of inter-arrival times ≤ threshold (burst detection)."""

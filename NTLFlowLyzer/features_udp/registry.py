@@ -13,12 +13,12 @@ try:
     # Import new feature modules (renamed for consistency)
     from . import udp_volume
     from . import udp_stat_moments
-    from . import udp_delta_len
     from . import udp_timing_metrics
     from . import udp_burst_metrics
     from . import udp_entropy_metrics
     from . import udp_header_metrics
     from . import udp_percentiles
+    from . import udp_stat_battery
     logger.debug("✅ Successfully imported UDP feature modules")
 except ImportError as e:
     logger.warning(f"⚠️ Could not import some UDP feature modules: {e}")
