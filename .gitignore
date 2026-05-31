@@ -36,3 +36,6 @@ docs/observable_radial_tree_data.js
 # Local taxonomy rendering tools
 tools/generate_udp_taxonomy.py
 tools/render/
+
+# Local planning notes (kept off the public repo)
+UDPFlowLyzer/possible_udp_features.md

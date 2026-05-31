@@ -44,7 +44,6 @@ python3 -m UDPFlowLyzer --config UDPFlowLyzer/config.json
 - UDPFlowLyzer/features_udp/: UDP feature extraction modules
 - UDPFlowLyzer/network_flow_capturer/: packet and flow capture logic
 - UDPFlowLyzer/writers/: output writer logic
-- docs/: documentation files
 
 ## Notes
 
