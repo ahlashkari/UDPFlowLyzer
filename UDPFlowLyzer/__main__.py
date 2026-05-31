@@ -29,7 +29,7 @@ def find_pcap_files(directory):
 def main():
     print("You initiated UDPFlowLyzer!")
     parsed_arguments = args_parser().parse_args()
-    config_file_address = "./NTLFlowLyzer/config.json" if parsed_arguments.config_file is None else parsed_arguments.config_file
+    config_file_address = "./UDPFlowLyzer/config.json" if parsed_arguments.config_file is None else parsed_arguments.config_file
     config = ConfigLoader(config_file_address)
 
     if not parsed_arguments.batch_mode:

@@ -32,18 +32,18 @@ Run the analyzer with the package entry point or module interface.
 
 Example:
 
-python3 -m NTLFlowLyzer --help
+python3 -m UDPFlowLyzer --help
 
 If using a config file:
 
-python3 -m NTLFlowLyzer --config NTLFlowLyzer/config.json
+python3 -m UDPFlowLyzer --config UDPFlowLyzer/config.json
 
 ## Repository Structure
 
-- NTLFlowLyzer/: core UDP flow analysis package
-- NTLFlowLyzer/features_udp/: UDP feature extraction modules
-- NTLFlowLyzer/network_flow_capturer/: packet and flow capture logic
-- NTLFlowLyzer/writers/: output writer logic
+- UDPFlowLyzer/: core UDP flow analysis package
+- UDPFlowLyzer/features_udp/: UDP feature extraction modules
+- UDPFlowLyzer/network_flow_capturer/: packet and flow capture logic
+- UDPFlowLyzer/writers/: output writer logic
 - docs/: documentation files
 
 ## Notes
@@ -52,7 +52,7 @@ Large PCAP files, generated CSV outputs, virtual environments, and private datas
 
 # Citation & Copyright (c) 2023
 
-For citation in your works and also understanding NTLFlowLyzer completely, you can find below published papers:
+For citation in your works and also understanding UDPFlowLyzer completely, you can find below published papers:
 
 - Jafari, S.; Shafi, M. and Lashkari, A. H., Unveiling Hierarchical Machine Learning UDP–QUIC Intrusion Detection: Protocol-Aware Flow Analysis and a New Generated DDoS Dataset, International Conference on Security and Cryptography (SECRYPT) 2026, Portugal
 
