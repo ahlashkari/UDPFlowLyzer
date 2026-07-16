@@ -15,7 +15,7 @@ UDPFlowLyzer is a UDP network traffic flow analyzer for extracting UDP flow-leve
 
 The figure below shows the UDPFlowLyzer feature taxonomy, organized by feature category and subgroup.
 
-![UDPFlowLyzer Feature Taxonomy](feature_taxonomy.svg)
+![UDPFlowLyzer Feature Taxonomy](UDPFlowLyzer.jpg)
 
 ## Installation
 
