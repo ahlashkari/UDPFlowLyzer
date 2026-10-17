@@ -55,7 +55,7 @@ Large PCAP files, generated CSV outputs, virtual environments, and private datas
 ## Contributing
 Contributions are welcome in the form of pull requests. 
 
-## Copyright (c) 2023 & Citation
+## Copyright (c) 2026 & Citation
 
 To cite UDPFlowLyzer in your work and understand it completely, find the following published paper:
 ```
