@@ -2,6 +2,8 @@
 
 # UDPFlowLyzer
 
+**UDP Network Flow Analyzer**
+
 UDPFlowLyzer is a UDP network traffic flow analyzer for extracting UDP flow-level features from PCAP/PCAPNG traffic.
 
 ## Features
@@ -21,52 +23,63 @@ The figure below shows the UDPFlowLyzer feature taxonomy, organized by feature c
 
 Create a virtual environment and install the package:
 
+```
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 pip install -e .
+```
 
 ## Usage
 
 Run the analyzer with the package entry point or module interface.
-
-Example:
-
+```
 python3 -m UDPFlowLyzer --help
-
+```
 If using a config file:
-
+```
 python3 -m UDPFlowLyzer --config UDPFlowLyzer/config.json
+```
 
 ## Repository Structure
 
-- UDPFlowLyzer/: core UDP flow analysis package
-- UDPFlowLyzer/features_udp/: UDP feature extraction modules
-- UDPFlowLyzer/network_flow_capturer/: packet and flow capture logic
-- UDPFlowLyzer/writers/: output writer logic
+- `UDPFlowLyzer/`: core UDP flow analysis package
+- `UDPFlowLyzer/features_udp/`: UDP feature extraction modules
+- `UDPFlowLyzer/network_flow_capturer/`: packet and flow capture logic
+- `UDPFlowLyzer/writers/`: output writer logic
 
 ## Notes
 
 Large PCAP files, generated CSV outputs, virtual environments, and private datasets are intentionally excluded from this repository.
 
-# Citation & Copyright (c) 2023
+Contributions are welcome in the form of pull requests. 
 
-For citation in your works and also understanding UDPFlowLyzer completely, you can find below published papers:
+## Copyright (c) 2023 & Citation
+
+To cite UDPFlowLyzer in your work and understand it completely, find the following published papers:
 
 - Jafari, S.; Shafi, M. and Lashkari, A. H., Unveiling Hierarchical Machine Learning UDP–QUIC Intrusion Detection: Protocol-Aware Flow Analysis and a New Generated DDoS Dataset, International Conference on Security and Cryptography (SECRYPT) 2026, Portugal
 
-# Contributing
+```
+@inproceedings{jafari_2026,
+    author={Jafari, Sepehr and Shafi, MohammadMoein and Lashkari, Arash Habibi},
+    title={Unveiling Hierarchical Machine Learning UDP–QUIC Intrusion Detection: Protocol-Aware Flow Analysis and a New Cloud-Generated DDoS Dataset}, 
+    booktitle={Proceedings of the 23rd International Conference on Security and Cryptography - Volume 1: SECRYPT}, 
+    year={2026},
+    pages={46-68},
+    isbn = {978-989-758-858-7},
+    doi={10.5220/0015033600004103}
+}
+```
 
-Any contribution is welcome in form of pull requests.
 
-
-# Project Team members 
+## Team Members 
 
 * [**Arash Habibi Lashkari:**](http://ahlashkari.com/index.asp) Founder and supervisor
 
-* [**Sepehr Jafari:**](https://github.com/Aeripsen) Research Assistant - York University ( 2025 - 2026)
+* [**Sepehr Jafari:**](https://github.com/Aeripsen) Research Assistant, York University (2025–2026)
 
 
-# Acknowledgment
+## Acknowledgment
 
 This project has been made possible through funding from the Natural Sciences and Engineering Research Council of Canada — NSERC (#RGPIN-2020-04701) and Canada Research Chair (Tier II) - (#CRC-2021-00340) to Arash Habibi Lashkari.
