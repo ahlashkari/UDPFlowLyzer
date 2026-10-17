@@ -52,6 +52,7 @@ python3 -m UDPFlowLyzer --config UDPFlowLyzer/config.json
 
 Large PCAP files, generated CSV outputs, virtual environments, and private datasets are intentionally excluded from this repository.
 
+## Contributing
 Contributions are welcome in the form of pull requests. 
 
 ## Copyright (c) 2023 & Citation
