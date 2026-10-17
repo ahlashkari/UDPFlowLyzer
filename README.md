@@ -56,7 +56,7 @@ Contributions are welcome in the form of pull requests.
 
 ## Copyright (c) 2023 & Citation
 
-To cite UDPFlowLyzer in your work and understand it completely, find the following published papers:
+To cite UDPFlowLyzer in your work and understand it completely, find the following published paper:
 ```
 @inproceedings{jafari_2026,
     author={Jafari, Sepehr and Shafi, MohammadMoein and Lashkari, Arash Habibi},
