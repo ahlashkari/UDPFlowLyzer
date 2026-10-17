@@ -57,9 +57,6 @@ Contributions are welcome in the form of pull requests.
 ## Copyright (c) 2023 & Citation
 
 To cite UDPFlowLyzer in your work and understand it completely, find the following published papers:
-
-- Jafari, S.; Shafi, M. and Lashkari, A. H., Unveiling Hierarchical Machine Learning UDP–QUIC Intrusion Detection: Protocol-Aware Flow Analysis and a New Generated DDoS Dataset, International Conference on Security and Cryptography (SECRYPT) 2026, Portugal
-
 ```
 @inproceedings{jafari_2026,
     author={Jafari, Sepehr and Shafi, MohammadMoein and Lashkari, Arash Habibi},
